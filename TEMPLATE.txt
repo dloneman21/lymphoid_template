@@ -1,0 +1,58 @@
+RLHSYN (Reactive lymphoid hyperplasia Synoptic Report)
+
+Reactive lymphoid hyperplasia. (See note.)
+	
+Note: The specimen is a slightly / moderately / markedly enlarged lymph node with architecture that is intact / distorted but not obliterated. The lymph node shows prominent follicular hyperplasia, with multiple small / large / small and large / round to oval / irregular follicles with active germinal centers. Mantle zones are intact / expanded / attenuated / absent. The paracortex is hyperplastic, and is occupied by small lymphocytes, scattered histiocytic/dendritic cells, / many / eosinophils / many / mature / and immature / plasma cells / and / few / occasional / many immunoblasts. 
+
+The paracortex shows focal / multifocal / prominent dermatopathic change. Bands of monocytoid B cells are seen along sinuses and adjacent to some follicles. Sinuses are patent and often show sinus histiocytosis. Medullary cords contain small lymphocytes, plasma cells and a few immunoblasts. Also present are clusters of epithelioid histiocytes / surrounding / and / invading / follicles / necrotizing / non-necrotizing granulomas. No granulomas / areas of necrosis / viral inclusions are identified. The capsule is thickened and fibrotic. The hilus is intact / occupied by adipose tissue.
+
+Concurrent flow cytometry (see below) shows no clonal B-cell or atypical T-cell population.
+
+In summary, the findings are consistent with reactive lymphoid hyperplasia, with no specific evidence of lymphoma or of any other neoplasm.
+
+
+FLSYN (Follicular lymphoma Synoptic Report)
+
+Follicular lymphoma, follicular / follicular and diffuse / predominantly diffuse pattern, grade 1 to 2 of 3 / 3A / 3B [with a high proliferation index]. (See note.)
+
+Note: The specimen is a slightly / a markedly / an enlarged lymph node that is almost entirely replaced by a proliferation of crowded, poorly-delineated follicles composed of centrocytes and occasional centroblasts, with fewer than 15 centroblasts per hpf / many centroblasts (>15 per hpf) in a background of centrocytes / solid aggregates of centroblasts. The follicles lack polarization and have few mitoses. Mantles are attenuated to absent. Patent sinuses are infrequent. The atypical follicles invade the capsule, where they are associated with fibrous thickening and reduplication of the capsule. Atypical follicles invade perinodal fat.  
+
+Immunostains show numerous B cells (CD20+) in a follicular pattern. B cells in follicles co-express CD10 / Bcl6 / and Bcl2, and are negative for CD5 and cyclin D1. Follicles are associated with CD21+ follicular dendritic cell meshworks. There are many interfollicular T cells (CD3+, CD5+). Ki67 (proliferation) shows staining of XX% of cells in follicles. Concurrent flow cytometry (see below) demonstrates ----------
+
+The histologic and immunophenotypic features together support a diagnosis of follicular lymphoma.
+
+
+NLPSYN (Nodular lymphocyte predominant Hodgkin lymphoma Synoptic Report)
+
+Nodular lymphocyte predominant Hodgkin lymphoma. (See note.) 
+
+Note: The specimen is a markedly / an enlarged lymph node that is almost entirely replaced by large, crowded, expansile nodules of cells. Cells in the nodules include mainly small lymphocytes, with singly scattered / and / clustered epithelioid histiocytes and few scattered large atypical lymphoid cells with large oval, / irregular, / and lobated nuclei, pale / filamentous / stippled chromatin, multiple basophilic nucleoli, and scant / to moderate quantity of pale cytoplasm. The appearance of the large cells is consistent with lymphocyte predominant (LP) cells. Granulocytes and plasma cells are essentially absent within the cellular nodules. The large atypical cells are often / sometimes surrounded by small to medium-sized lymphoid cells with slightly irregular nuclei and a distinct rim of pale cytoplasm. Focally there is a small amount of residual reactive lymphoid tissue at the periphery of the lymph node. A few / occasional / frequent follicles show progressive transformation of germinal centers.
+
+Immunostains show that the large atypical cells are positive for CD20 / CD19 / Pax5 / Oct2 / Bob1 / EMA / CD45 / and Bcl6. Large cells are negative for CD15 / CD30 / and MUM1. A few / Scattered / Many large cells are positive for CD30 / MUM1 / EMA. In situ hybridization for Epstein-Barr virus (EBER) shows no staining / staining of large cells / staining of rare small cells. The small lymphocytes are a mixture of B cells (CD20+ / CD19+ / Pax5+) and T cells (CD3+ / CD5+), with a predominance of B cells / T cells within the nodules and a predominance of T cells between nodules. PD1+ / CD3+ / CD57+ T-cell rosettes are present around large atypical cells. An increased number of CD57+ / PD1+ T cells is present within nodules with rare rosette formation / with occasional rosette formation / with conspicuous rosette formation / without rosette formation. 
+
+Concurrent flow cytometry (see below) shows no abnormal B or T-cell population / polytypic B cells and T cells with an elevated CD4:CD8 ratio / a subset of T cells with co-expression of CD4 and CD8, without expression of TdT or CD1a.
+
+The histologic and immunophenotypic findings together support a diagnosis of nodular lymphocyte predominant Hodgkin lymphoma.
+
+
+CHLSYN (Classical Hodgkin lymphoma Synoptic Report)
+
+Classic Hodgkin lymphoma, ----------------- sub-type. (See note.)
+
+Note: The specimen is a markedly / an enlarged lymph node with architectural effacement by a mixed inflammatory cell infiltrate consisting of small lymphocytes, histiocytes, granulocytes including eosinophils, plasma cells and large atypical cells. The latter have large oval, / irregular, / and lobated nuclei, prominent eosinophilic nucleoli, and scant / to moderate quantity of pale cytoplasm. Occasional binucleate / multinucleate forms are seen, as well as lacunar cells / mummified cells. The appearance of the large cells is consistent with Reed-Sternberg cells and variants. Fibrous bands are conspicuous / inconspicuous and completely / incompletely surround nodules of inflammatory cells.
+
+Immunostains show that the large atypical cells are positive for CD30 / CD15 / MUM1 / Pax5 (weak) / CD20 (weak, subset) / Oct2 / Bob1. Large cells are negative for CD20 / CD45 / Oct2 / Bob1. In situ hybridization for Epstein-Barr virus (EBER) shows no staining / staining of large cells / staining of rare small cells / staining of large and small cells. The small lymphocytes are a mixture of T cells (CD3+ / CD5+) and fewer small B cells (CD20+ / CD19+ / Pax5+). 
+
+Concurrent flow cytometry (see below) shows no abnormal B or T-cell population / polytypic B cells and T cells with an elevated CD4:CD8 ratio.
+
+The histologic and immunophenotypic findings together support a diagnosis of classic Hodgkin lymphoma, --------------- sub-type.
+ 
+DLBSYN (Diffuse large B-cell lymphoma Synoptic Report)
+
+Diffuse large B-cell lymphoma. (See note.)
+
+Note: The specimen is a slightly / a markedly / an enlarged lymph node that is almost entirely replaced by a diffuse infiltrate of large atypical lymphoid cells with oval, / irregular, / and lobated nuclei, [multiple] prominent [central] nucleoli, and scant / to moderate quantity of pale cytoplasm. [Scattered mitotic figures are seen. Areas of necrosis are present.] Background small lymphocytes and histiocytes are present. Patent sinuses are infrequent. [The atypical infiltrate extends beyond the lymph node capsule.]  
+
+Immunostains show numerous B cells (CD20+) in a diffuse pattern. B cells show the following immunophenotype: CD10 [positive/negative], BCL6 [positive/negative], MUM1 [positive/negative]. BCL2 is [positive/negative/weak] and MYC is [positive/negative/weak]. BCL2/MYC coexpression analysis shows [double hit/BCL2 positive only/MYC positive only/neither positive]. Quantitative analysis shows MYC staining in XX% of cells and BCL2 staining in XX% of cells. Based on Hans criteria, this represents a [GCB/ABC/unclassifiable] type DLBCL. [This represents a double hit/triple hit lymphoma.] In situ hybridization for Epstein-Barr virus (EBER) shows [negative/positive in large cells/positive in small cells/positive in both large and small cells]. Scattered non-neoplastic T cells (CD3+, CD5+) are present. Ki67 shows a proliferation index of XX%. Concurrent flow cytometry (see below) demonstrates ----------
+
+The histologic and immunophenotypic features together support a diagnosis of diffuse large B-cell lymphoma of [germinal center/activated B-cell] origin [with double hit features (BCL2 and MYC positive)/with triple hit features (BCL2, MYC, and BCL6 positive)].

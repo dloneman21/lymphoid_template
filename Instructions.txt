@@ -1,0 +1,7 @@
+make a web app (html/js/css only) that runs locally in the web browser (no serverside component) no data transfer to any site (HIPAA compliance).
+
+
+The app should a series of dropdown menus to quickly describe tissue biopsy characteristics in the workup of a potential lymphoma; this includes descriptions of things such as architecture (e.g. effaced or not), cellular composition and organization, description of atypical cells, if present (e.g. size, nuclear countours, chromatin quality, presence of nucleoli), and other notable features (e.g. necrosis, mitotic activity, granulomas). Use the provided template as a reference/example
+operate in a heirarchical fashion asking about reactive versus lymphproliferative process, type of lymphoproliferative process (t cell lymphoma, b-cell lymphoma, etc)
+
+clicking these options should populate a text box which can then be copied into the final report

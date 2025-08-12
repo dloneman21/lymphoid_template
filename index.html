@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lymphoid Tissue Biopsy Reporter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lymphoid Tissue Biopsy Reporter</h1>
+            <p class="subtitle">HIPAA Compliant - No Data Transfer - Local Processing Only</p>
+        </header>
+
+        <div class="main-content">
+            <div class="form-section">
+                <h2>Diagnostic Classification</h2>
+                <div class="form-group">
+                    <label for="process-type">Process Type:</label>
+                    <select id="process-type" onchange="handleProcessTypeChange()">
+                        <option value="">Select process type...</option>
+                        <option value="reactive">Reactive Process</option>
+                        <option value="lymphoproliferative">Lymphoproliferative Process</option>
+                    </select>
+                </div>
+
+                <div id="lymphoproliferative-options" class="form-group" style="display: none;">
+                    <label for="lymphoma-type">Lymphoma Type:</label>
+                    <select id="lymphoma-type" onchange="handleLymphomaTypeChange()">
+                        <option value="">Select lymphoma type...</option>
+                        <option value="b-cell">B-Cell Lymphoma</option>
+                        <option value="t-cell">T-Cell Lymphoma</option>
+                        <option value="hodgkin">Hodgkin Lymphoma</option>
+                    </select>
+                </div>
+
+                <div id="b-cell-options" class="form-group" style="display: none;">
+                    <label for="b-cell-subtype">B-Cell Subtype:</label>
+                    <select id="b-cell-subtype" onchange="handleBcellSubtypeChange()">
+                        <option value="">Select B-cell subtype...</option>
+                        <option value="follicular">Follicular Lymphoma</option>
+                        <option value="diffuse-large">Diffuse Large B-Cell Lymphoma</option>
+                        <option value="marginal-zone">Marginal Zone Lymphoma</option>
+                        <option value="mantle-cell">Mantle Cell Lymphoma</option>
+                    </select>
+                </div>
+
+                <div id="hodgkin-options" class="form-group" style="display: none;">
+                    <label for="hodgkin-subtype">Hodgkin Subtype:</label>
+                    <select id="hodgkin-subtype" onchange="handleHodgkinSubtypeChange()">
+                        <option value="">Select Hodgkin subtype...</option>
+                        <option value="classical">Classical Hodgkin Lymphoma</option>
+                        <option value="nodular-lp">Nodular Lymphocyte Predominant</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Architecture & Cellular Features</h2>
+                <div class="form-group">
+                    <label for="architecture">Architecture:</label>
+                    <select id="architecture">
+                        <option value="">Select architecture...</option>
+                        <option value="intact">Intact</option>
+                        <option value="distorted">Distorted but not obliterated</option>
+                        <option value="effaced">Effaced</option>
+                        <option value="replaced">Almost entirely replaced</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="lymph-node-size">Lymph Node Size:</label>
+                    <select id="lymph-node-size">
+                        <option value="">Select size...</option>
+                        <option value="slightly">Slightly enlarged</option>
+                        <option value="moderately">Moderately enlarged</option>
+                        <option value="markedly">Markedly enlarged</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="follicular-pattern">Follicular Pattern:</label>
+                    <select id="follicular-pattern">
+                        <option value="">Select pattern...</option>
+                        <option value="prominent-hyperplasia">Prominent follicular hyperplasia</option>
+                        <option value="crowded-poorly-delineated">Crowded, poorly-delineated follicles</option>
+                        <option value="nodular">Large, crowded, expansile nodules</option>
+                        <option value="diffuse">Diffuse infiltrate</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="follicle-size">Follicle Size:</label>
+                    <select id="follicle-size">
+                        <option value="">Select follicle size...</option>
+                        <option value="small">Small</option>
+                        <option value="large">Large</option>
+                        <option value="small-and-large">Small and large</option>
+                        <option value="round-oval">Round to oval</option>
+                        <option value="irregular">Irregular</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Cellular Composition</h2>
+                <div class="form-group">
+                    <label for="mantle-zones">Mantle Zones:</label>
+                    <select id="mantle-zones">
+                        <option value="">Select mantle zone status...</option>
+                        <option value="intact">Intact</option>
+                        <option value="expanded">Expanded</option>
+                        <option value="attenuated">Attenuated</option>
+                        <option value="absent">Absent</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="paracortex">Paracortex:</label>
+                    <select id="paracortex">
+                        <option value="">Select paracortex status...</option>
+                        <option value="hyperplastic">Hyperplastic</option>
+                        <option value="occupied-small-lymphocytes">Occupied by small lymphocytes</option>
+                        <option value="dermatopathic-change">Shows dermatopathic change</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="eosinophils">Eosinophils:</label>
+                    <select id="eosinophils">
+                        <option value="">Select eosinophil presence...</option>
+                        <option value="none">None</option>
+                        <option value="scattered">Scattered</option>
+                        <option value="many">Many</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="plasma-cells">Plasma Cells:</label>
+                    <select id="plasma-cells">
+                        <option value="">Select plasma cell status...</option>
+                        <option value="none">None</option>
+                        <option value="few">Few</option>
+                        <option value="occasional">Occasional</option>
+                        <option value="many">Many</option>
+                        <option value="mature">Mature</option>
+                        <option value="immature">Immature</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Atypical Cells (if present)</h2>
+                <div class="form-group">
+                    <label for="cell-size">Cell Size:</label>
+                    <select id="cell-size">
+                        <option value="">Select cell size...</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nuclear-contours">Nuclear Contours:</label>
+                    <select id="nuclear-contours">
+                        <option value="">Select nuclear contours...</option>
+                        <option value="oval">Oval</option>
+                        <option value="irregular">Irregular</option>
+                        <option value="lobated">Lobated</option>
+                        <option value="round">Round</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="chromatin-quality">Chromatin Quality:</label>
+                    <select id="chromatin-quality">
+                        <option value="">Select chromatin quality...</option>
+                        <option value="pale">Pale</option>
+                        <option value="filamentous">Filamentous</option>
+                        <option value="stippled">Stippled</option>
+                        <option value="coarse">Coarse</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nucleoli">Nucleoli:</label>
+                    <select id="nucleoli">
+                        <option value="">Select nucleoli status...</option>
+                        <option value="absent">Absent</option>
+                        <option value="inconspicuous">Inconspicuous</option>
+                        <option value="prominent">Prominent</option>
+                        <option value="multiple">Multiple</option>
+                        <option value="basophilic">Basophilic</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Other Notable Features</h2>
+                <div class="form-group">
+                    <label for="necrosis">Necrosis:</label>
+                    <select id="necrosis">
+                        <option value="">Select necrosis status...</option>
+                        <option value="none">None identified</option>
+                        <option value="focal">Focal</option>
+                        <option value="multifocal">Multifocal</option>
+                        <option value="areas-present">Areas of necrosis present</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mitotic-activity">Mitotic Activity:</label>
+                    <select id="mitotic-activity">
+                        <option value="">Select mitotic activity...</option>
+                        <option value="none">None</option>
+                        <option value="few">Few mitotic figures</option>
+                        <option value="scattered">Scattered mitotic figures</option>
+                        <option value="many">Many mitotic figures</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="granulomas">Granulomas:</label>
+                    <select id="granulomas">
+                        <option value="">Select granuloma status...</option>
+                        <option value="none">None identified</option>
+                        <option value="clusters-epithelioid">Clusters of epithelioid histiocytes</option>
+                        <option value="necrotizing">Necrotizing granulomas</option>
+                        <option value="non-necrotizing">Non-necrotizing granulomas</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="capsule">Capsule:</label>
+                    <select id="capsule">
+                        <option value="">Select capsule status...</option>
+                        <option value="normal">Normal</option>
+                        <option value="thickened-fibrotic">Thickened and fibrotic</option>
+                        <option value="invaded">Invaded by atypical cells</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Immunohistochemistry</h2>
+                <div class="form-group">
+                    <label for="cd20">CD20:</label>
+                    <select id="cd20">
+                        <option value="">Select CD20 status...</option>
+                        <option value="positive">Positive</option>
+                        <option value="negative">Negative</option>
+                        <option value="weak-subset">Weak, subset</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cd3">CD3:</label>
+                    <select id="cd3">
+                        <option value="">Select CD3 status...</option>
+                        <option value="positive">Positive</option>
+                        <option value="negative">Negative</option>
+                        <option value="scattered">Scattered</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cd30">CD30:</label>
+                    <select id="cd30">
+                        <option value="">Select CD30 status...</option>
+                        <option value="positive">Positive</option>
+                        <option value="negative">Negative</option>
+                        <option value="subset">Subset positive</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ki67">Ki67 Proliferation Index:</label>
+                    <input type="text" id="ki67" placeholder="e.g., 80%" />
+                </div>
+            </div>
+
+            <div class="form-section" id="dlbcl-specific" style="display: none;">
+                <h2>DLBCL Classification Features</h2>
+                <div class="form-group">
+                    <label for="hans-cd10">CD10 (Hans Criteria):</label>
+                    <select id="hans-cd10">
+                        <option value="">Select CD10 status...</option>
+                        <option value="positive">Positive</option>
+                        <option value="negative">Negative</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="hans-bcl6">BCL6 (Hans Criteria):</label>
+                    <select id="hans-bcl6">
+                        <option value="">Select BCL6 status...</option>
+                        <option value="positive">Positive</option>
+                        <option value="negative">Negative</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="hans-mum1">MUM1 (Hans Criteria):</label>
+                    <select id="hans-mum1">
+                        <option value="">Select MUM1 status...</option>
+                        <option value="positive">Positive</option>
+                        <option value="negative">Negative</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="eber-status">EBER Status:</label>
+                    <select id="eber-status">
+                        <option value="">Select EBER status...</option>
+                        <option value="negative">Negative</option>
+                        <option value="positive-large-cells">Positive in large cells</option>
+                        <option value="positive-small-cells">Positive in small cells</option>
+                        <option value="positive-both">Positive in both large and small cells</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bcl2-status">BCL2 Status:</label>
+                    <select id="bcl2-status">
+                        <option value="">Select BCL2 status...</option>
+                        <option value="positive">Positive</option>
+                        <option value="negative">Negative</option>
+                        <option value="weak">Weak positive</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="myc-status">MYC Status:</label>
+                    <select id="myc-status">
+                        <option value="">Select MYC status...</option>
+                        <option value="positive">Positive</option>
+                        <option value="negative">Negative</option>
+                        <option value="weak">Weak positive</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="myc-percentage">MYC Percentage:</label>
+                    <input type="text" id="myc-percentage" placeholder="e.g., 40%" />
+                </div>
+
+                <div class="form-group">
+                    <label for="bcl2-percentage">BCL2 Percentage:</label>
+                    <input type="text" id="bcl2-percentage" placeholder="e.g., 70%" />
+                </div>
+
+                <div class="form-group">
+                    <label for="gcb-vs-abc">GCB vs ABC Classification:</label>
+                    <input type="text" id="gcb-vs-abc" readonly placeholder="Auto-calculated from Hans criteria" />
+                </div>
+
+                <div class="form-group">
+                    <label for="bcl2-myc-coexpression">BCL2/MYC Coexpression:</label>
+                    <input type="text" id="bcl2-myc-coexpression" readonly placeholder="Auto-calculated from BCL2/MYC status" />
+                </div>
+
+                <div class="form-group">
+                    <label for="double-hit-lymphoma">Double Hit Lymphoma:</label>
+                    <input type="text" id="double-hit-lymphoma" readonly placeholder="Auto-calculated from BCL2/MYC/BCL6 status" />
+                </div>
+            </div>
+
+            <div class="button-section">
+                <button type="button" onclick="generateReport()" class="generate-btn">Generate Report</button>
+                <button type="button" onclick="clearForm()" class="clear-btn">Clear Form</button>
+            </div>
+        </div>
+
+        <div class="report-section">
+            <h2>Generated Report</h2>
+            <div class="report-container">
+                <textarea id="generated-report" readonly placeholder="Your generated report will appear here..."></textarea>
+                <div class="report-actions">
+                    <button type="button" onclick="copyReport()" class="copy-btn">Copy Report</button>
+                    <button type="button" onclick="downloadReport()" class="download-btn">Download Report</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
